@@ -94,15 +94,18 @@ h1,h2,h3,h4,h5,
 .container:after {
 	clear: both;
 }
-#wrapper {
+.pushable > .pusher {
+	background-color: #fff;
+}
+/*#wrapper {
 	height: auto;
 	min-height: calc(100% - 1em - 50px);
 	position: relative;
-}
+}*/
 #header {
 	border-bottom: 1px solid #ccc;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
 	#header {
 		padding-top: 1rem;
 		border-bottom: 0;
@@ -113,7 +116,7 @@ h1,h2,h3,h4,h5,
 	padding: 0;
 	list-style: none;
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 767px) {
 	#header ul {
 		display: none;
 		position: absolute;
@@ -124,7 +127,7 @@ h1,h2,h3,h4,h5,
 		background-color: #fff;
 	}
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
 	#header ul {
 		float:right;
 		display: block;
@@ -138,7 +141,7 @@ h1,h2,h3,h4,h5,
 #header ul > li {
 	border-bottom: 1px solid #eee;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
 	#header ul > li {
 		float: left;
 		border-bottom: 0;
@@ -153,7 +156,7 @@ h1,h2,h3,h4,h5,
 	padding-right: 18px;
 	color: rgba(0,0,0,0.87);
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
 	#header ul > li > a {
 		margin-bottom: -2px;
 	}
@@ -186,7 +189,7 @@ h1,h2,h3,h4,h5,
 #header ul > li > a.active.yellow {
 	color: #fbbd08;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
 	#header ul > li > a.active {
 		border-bottom: 2px solid #40b553;
 	}
@@ -206,7 +209,7 @@ h1,h2,h3,h4,h5,
 	width: auto;
 	height: 30px;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
 	#header .brand {
 		padding-top: 10px;
 		padding-bottom: 10px;
@@ -225,7 +228,7 @@ h1,h2,h3,h4,h5,
 #header .navicon:focus {
 	color: #333;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
 	#header .navicon {
 		display: none;
 	}
@@ -240,7 +243,7 @@ h1,h2,h3,h4,h5,
 	margin-bottom: 30px;
 	box-shadow: 0 5px 8px #ddd;
 }
-#footer {
+/*#footer {
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -250,7 +253,7 @@ h1,h2,h3,h4,h5,
 	 	-ms-transform: translate(0, 100%);
 	 	 -o-transform: translate(0, 100%);
 	      	transform: translate(0, 100%);
-}
+}*/
  #footer ul {
  	margin: 0;
  	padding: 0;
@@ -285,8 +288,9 @@ h1,h2,h3,h4,h5,
  	margin-bottom: -12px;
  	border-radius: 50%;
  	background-color: #cacbcd;
- 	cursor: pointer;
  }
  .wizard-item.active {
  	background-color: #40b553;
  }
+
+
